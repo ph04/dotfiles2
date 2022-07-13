@@ -48,9 +48,8 @@
 
 ## firefox
 
-- [ ] kinetic scroll (maybe picture on telegram? idk)
+- [x] kinetic scroll
 - [ ] font for "code" text
-- [ ] italian language
 
 ## telegram
 
