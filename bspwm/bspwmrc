@@ -13,4 +13,5 @@ bspc config gapless_monocle      true
 
 exec xsetroot -cursor_name left_ptr & # fix cursor
 exec nitrogen --restore & # restore background
+exec sct 3800 & # set yellow filter
 exec picom # run compositor
