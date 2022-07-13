@@ -19,6 +19,7 @@
 - [x] font
 - [x] gap
 - [x] zsh
+- [ ] change selection color
 
 ## neovim
 
