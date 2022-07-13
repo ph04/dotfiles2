@@ -3,15 +3,16 @@
 ## system
 
 - [x] make a swapfile
-- [ ] clean fonts
+- [x] clean fonts
+- [x] emojis
 
 ## vsc
 
-- [ ] fix font issue
+- [x] fix font
 
 ## thunar
 
-- [ ] it's super ugly
+- [ ] add a theme
 
 ## bspwm
 
