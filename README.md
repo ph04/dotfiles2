@@ -25,7 +25,7 @@
 - [x] font
 - [x] gap
 - [x] zsh
-- [ ] change selection color
+- [ ] change selection color (maybe not?)
 
 ## neovim
 
@@ -64,7 +64,7 @@
 
 ## discord
 
-- [ ] font
+- [ ] font (i don't think i can change it)
 
 ## nitrogen
 
@@ -87,7 +87,7 @@
 
 ## sxhkd
 
-- [ ] autokey commands
+- [x] autokey commands
 - [ ] volume commands
 
 ## sct
