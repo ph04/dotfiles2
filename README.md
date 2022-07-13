@@ -3,6 +3,11 @@
 ## system
 
 - [x] make a swapfile
+- [ ] clean fonts
+
+## vsc
+
+- [ ] fix font issue
 
 ## thunar
 
@@ -62,8 +67,8 @@
 
 ## nitrogen
 
-- [ ] in bspwmrc
-- [ ] set picture
+- [x] in bspwmrc
+- [x] set picture
 
 ## betterlockscreen
 
@@ -86,4 +91,4 @@
 
 ## sct
 
-- [ ] install it and bspwmrc
+- [x] install it and bspwmrc
