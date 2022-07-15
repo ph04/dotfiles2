@@ -64,7 +64,8 @@
 
 ## discord
 
-- [ ] font (i don't think i can change it)
+- [x] font
+- [ ] weird audio bug
 
 ## nitrogen
 
