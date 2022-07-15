@@ -1,0 +1,119 @@
+[colors]
+background = #3a3a3a
+background-alt = #373B41
+
+foreground = #C5C8C6
+primary = #F0C674
+secondary = #8ABEB7
+alert = #A54242
+disabled = #707880
+
+[bar/main]
+width = 100%
+height = 24pt
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-color = #00000000
+
+separator = |
+separator-foreground = ${colors.disabled}
+
+font-0 = CaskaydiaCove Nerd Font;2
+font-1 = Cantarell;2
+
+modules-left = xworkspaces xwindow
+modules-right = cpu_temp gpu_temp memory volume date
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+[module/xworkspaces]
+type = internal/xworkspaces
+
+label-active = %name%
+label-active-background = ${colors.background-alt}
+label-active-underline= ${colors.primary}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.disabled}
+label-empty-padding = 1
+
+[module/xwindow]
+type = internal/xwindow
+format-prefix = "   "
+format-prefix-foreground = ${colors.primary}
+format-foreground = ${colors.foreground}
+label = "%title:0:60:...%"
+
+[module/volume]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_1e_00.3.analog-stereo
+
+format-volume-prefix = " 墳 VOL "
+format-volume-prefix-foreground = ${colors.primary}
+format-volume = "<label-volume>"
+
+label-volume = "%percentage%% "
+
+label-muted = " muted "
+label-muted-foreground = ${colors.disabled}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " ﬙ RAM "
+format-prefix-foreground = ${colors.primary}
+format-foreground = ${colors.foreground}
+label = "%percentage_used:2%% / %mb_used% "
+
+[module/cpu_temp]
+type = custom/script
+interval = 2
+format-prefix = "﨏 CPU "
+format = <label>
+format-background = ${colors.background}
+format-prefix-foreground = ${colors.primary}
+format-foreground = ${colors.foreground}
+format-padding = 1
+exec = ~/.config/polybar/scripts/cpu_temp.sh
+
+[module/gpu_temp]
+type = custom/script
+interval = 2
+format-prefix = "﨏 GPU "
+format = <label>
+format-background = ${colors.background}
+format-prefix-foreground = ${colors.primary}
+format-foreground = ${colors.foreground}
+format-padding = 1
+exec = ~/.config/polybar/scripts/gpu_temp.sh
+
+[module/date]
+type = internal/date
+interval = 1
+
+time = "%a, %d %b %y - %H:%M:%S"
+
+label = " %time% "
+label-foreground = ${colors.primary}
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+; vim:ft=dosini
