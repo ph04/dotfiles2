@@ -29,6 +29,8 @@
 ## neovim
 
 - [ ] fix scroll in documentation CoC
+- [x] bufferline
+- [ ] go to previous buffer bufferline (ctrl + tab)
 - [ ] check other useful things to add
 
 ## zsh
