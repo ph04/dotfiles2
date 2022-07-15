@@ -30,6 +30,7 @@
 
 - [ ] fix scroll in documentation CoC
 - [x] bufferline
+- [x] centered scroll
 - [ ] go to previous buffer bufferline (ctrl + tab)
 - [ ] check other useful things to add
 - [ ] fix nvim tree opening on the right for some stupid reason
