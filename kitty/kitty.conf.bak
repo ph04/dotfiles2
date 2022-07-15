@@ -1,6 +1,6 @@
-include 'Gruvbox Dark Hard.conf'
+include current-theme.conf
 
-font_family Caskaydia
-font_size 13.0
-cursor_shape block
-shell_integration no-cursor
+font_family 		CaskaydiaCove Nerd Font
+font_size 		13.0
+cursor_shape 		block
+shell_integration 	no-cursor
