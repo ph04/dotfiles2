@@ -10,6 +10,10 @@ require("bufferline-config")
 vim.api.nvim_command('inoremap jj <Esc>')
 vim.api.nvim_command('set rnu!')
 vim.api.nvim_command('set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab')
+vim.api.nvim_command('nnoremap j jzz')
+vim.api.nvim_command('nnoremap k kzz')
+vim.api.nvim_command('nnoremap { {zz')
+vim.api.nvim_command('nnoremap } }zz')
 
 -- COLORSCHEME
 
