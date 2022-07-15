@@ -40,15 +40,16 @@
 
 ## polybar
 
-- [ ] make one
-- [ ] desktops
-- [ ] window title
-- [ ] cpu temp
-- [ ] gpu temp
-- [ ] ram usage
-- [ ] volume
-- [ ] time and date
+- [x] make one
+- [x] desktops
+- [x] window title
+- [x] cpu temp
+- [x] gpu temp
+- [x] ram usage
+- [x] volume
+- [x] time and date
 - [ ] applications in the background
+- [ ] mic volume?
 
 ## dunst
 
