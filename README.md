@@ -32,6 +32,7 @@
 - [x] bufferline
 - [ ] go to previous buffer bufferline (ctrl + tab)
 - [ ] check other useful things to add
+- [ ] fix nvim tree opening on the right for some stupid reason
 
 ## zsh
 
