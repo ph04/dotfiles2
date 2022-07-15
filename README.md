@@ -25,11 +25,11 @@
 - [x] font
 - [x] gap
 - [x] zsh
-- [ ] change selection color (maybe not?)
 
 ## neovim
 
-- [ ] set up properly
+- [ ] fix scroll in documentation CoC
+- [ ] check other useful things to add
 
 ## zsh
 
