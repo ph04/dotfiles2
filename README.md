@@ -18,6 +18,7 @@
 
 - [x] colors
 - [ ] focus on things with the cursor
+- [ ] remove last desktop (facepalm)
 
 ## kitty
 
