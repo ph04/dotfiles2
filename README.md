@@ -5,6 +5,7 @@
 - [x] make a swapfile
 - [x] clean fonts
 - [x] emojis
+- [x] enable vsync
 
 ## sddm
 
