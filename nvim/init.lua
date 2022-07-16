@@ -14,6 +14,14 @@ vim.api.nvim_command('nnoremap j jzz')
 vim.api.nvim_command('nnoremap k kzz')
 vim.api.nvim_command('nnoremap { {zz')
 vim.api.nvim_command('nnoremap } }zz')
+vim.api.nvim_command('nnoremap p pzz')
+vim.api.nvim_command('nnoremap P Pzz')
+vim.api.nvim_command('nnoremap dd ddzz')
+vim.api.nvim_command('nnoremap <A-h> <C-W><C-H>')
+vim.api.nvim_command('nnoremap <A-j> <C-W><C-J>')
+vim.api.nvim_command('nnoremap <A-k> <C-W><C-K>')
+vim.api.nvim_command('nnoremap <A-l> <C-W><C-L>')
+vim.api.nvim_command('set mouse=a')
 
 -- COLORSCHEME
 
@@ -26,7 +34,7 @@ vim.api.nvim_command('let g:airline_powerline_fonts = 1')
 -- NVIM TREE SHORTCUTS
 
 vim.api.nvim_command('noremap tt :NvimTreeToggle <CR>')
-vim.api.nvim_command('noremap tf :NvimTreeFocus <CR>')
+vim.api.nvim_command('noremap tf :NvimTreeFindFile <CR>')
 vim.api.nvim_command('noremap tr :NvimTreeRefresh <CR>')
 vim.api.nvim_command('noremap tg :wincmd p <CR>')
 
