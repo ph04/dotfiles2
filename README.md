@@ -36,10 +36,11 @@
 - [ ] fix scroll in documentation CoC
 - [x] bufferline
 - [x] centered scroll
-- [ ] go to previous buffer bufferline (ctrl + tab)
+- [ ] go to previous buffer (ctrl + tab)
 - [ ] check other useful things to add
 - [ ] fix nvim tree opening on the right for some stupid reason
-- [ ] switch buffer on splits with some shortcut
+- [x] switch buffer on splits with some shortcut
+- [ ] adjust buffer dimensions with some shortcut
 
 ## zsh
 
@@ -68,6 +69,7 @@
 
 - [x] kinetic scroll
 - [ ] font for "code" text
+- [ ] remove errors from whatsapp (very annoying)
 
 ## telegram
 
