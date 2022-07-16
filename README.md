@@ -102,8 +102,9 @@
 
 ## sxhkd
 
-- [x] autokey commands
+- [x] autokey commands (xclip was missing)
 - [ ] volume commands
+- [ ] remove useless commands
 
 ## sct
 
