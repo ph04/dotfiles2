@@ -6,6 +6,10 @@
 - [x] clean fonts
 - [x] emojis
 
+## sddm
+
+- [ ] steal some theme (archcraft?)
+
 ## vsc
 
 - [x] fix font
