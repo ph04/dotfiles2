@@ -58,6 +58,7 @@
 - [x] ram usage
 - [x] volume
 - [x] time and date
+- [ ] dmenu integration somehow
 - [ ] applications in the background
 - [ ] mic volume?
 
