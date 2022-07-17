@@ -42,6 +42,7 @@
 - [ ] fix nvim tree opening on the right for some stupid reason
 - [x] switch buffer on splits with some shortcut
 - [ ] adjust buffer dimensions with some shortcut
+- [ ] number of current line
 
 ## zsh
 
