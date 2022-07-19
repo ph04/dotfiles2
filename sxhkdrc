@@ -1,0 +1,164 @@
+### ----- Bspwm
+
+# Reload keybindings
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# Close current program
+super + q
+	bspc node -c
+
+# Toggle fullscreen/monocle
+super + f
+	bspc desktop -l next
+	
+# Split horizontal/vertical
+super + {h,v}
+	bspc node -p {east,south}
+
+# Preselect the split ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Toggle floating/tiled
+super + space
+    bspc node -t "~"{floating,tiled}
+
+# Pseudo tiled/tiled mode
+super + {p,t}
+    bspc node -t {pseudo_tiled,tiled}
+
+# Set node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# Send the window to another edge of the screen
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Change focus to next window, including floating window
+alt + {_,shift + }Tab
+	bspc node -f {next.local,prev.local}
+
+# Switch workspace
+ctrl + alt + {Left,Right}
+	bspc desktop -f {prev.local,next.local}
+
+# Switch to last opened workspace
+super + {Tab,grave}
+	bspc {node,desktop} -f last
+
+# Send focused window to another workspace
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-9}'
+
+# Expanding windows
+super + control + {Left,Right,Up,Down}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+	
+# Shrinking windows
+super + alt + {Left,Right,Up,Down}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+	
+# Move floating windows
+alt + shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
+### ----- System
+
+# Brighness control
+#XF86MonBrightness{Up,Down}
+#	backlight{-up,-down}
+	
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+        pamixer --sink alsa_output.pci-0000_1e_00.3.analog-stereo {-i,-d} 5
+
+#XF86AudioMute
+#	amixer set Master toggle
+
+
+
+### ----- Dunst
+
+# Close last notification
+ctrl + space
+	dunstctl close
+
+# Close all notifications
+ctrl + alt + space
+	dunstctl close-all
+
+# Show the last closed notification
+ctrl + shift + space
+	dunstctl history-pop
+
+
+
+### ----- Rofi
+
+# Rofi run
+super + shift + d
+        rofi -show run
+
+# Rofi drun
+super + d
+        rofi -show drun
+
+
+
+### ----- Missing Keys
+
+ctrl + shift + z
+	echo "<" | tr -d '\n' | xclip -selection clipboard
+
+ctrl + shift + x
+	echo ">" | tr -d '\n' | xclip -selection clipboard
+
+ctrl + shift + 1
+	echo "\`" | tr -d '\n' | xclip -selection clipboard
+
+ctrl + shift + 2
+	echo "~" | tr -d '\n' | xclip -selection clipboard
+
+
+
+### ----- Misc shortcuts
+
+# Open spotify
+super + s
+	spotify
+
+# Open firefox
+super + shift + f
+	firefox
+
+# Open file manager
+super + e
+	thunar
+
+# Open xcolor
+super + alt + c
+	xcolor | xclip -selection clipboard
+
+# Open terminal
+super + Return
+	kitty
+
+# Open lockscreen
+super + alt + l
+    betterlockscreen --lock blur
+
+# Take a screenshot
+super + Print
+	spectacle -bc
+
+# Take a screenshot of a region
+super + alt + s
+	spectacle -bcr
