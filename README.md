@@ -23,7 +23,7 @@
 
 - [x] colors
 - [ ] focus on things with the cursor
-- [ ] remove last desktop (facepalm)
+- [x] remove last desktop (facepalm)
 
 ## kitty
 
@@ -41,8 +41,7 @@
 - [ ] check other useful things to add
 - [ ] fix nvim tree opening on the right for some stupid reason
 - [x] switch buffer on splits with some shortcut
-- [ ] adjust buffer dimensions with some shortcut
-- [ ] number of current line
+- [x] number of current line
 
 ## zsh
 
@@ -60,7 +59,6 @@
 - [x] volume
 - [x] time and date
 - [ ] fix cursor on desktops
-- [ ] dmenu integration somehow
 - [ ] applications in the background
 - [ ] mic volume?
 
@@ -96,18 +94,19 @@
 ## rofi
 
 - [ ] menu for shutting down (steal from archcraft possibly)
+- [ ] dmenu theme
 
 ## picom
 
 - [x] in bspwmrc
 - [ ] set transparency
-  - [ ] kitty
+  - [ ] kitty (?)
 
 ## sxhkd
 
 - [x] autokey commands (xclip was missing)
 - [x] volume commands
-- [ ] remove useless commands (clean the file overall)
+- [x] remove useless commands (clean the file overall)
 
 ## sct
 
