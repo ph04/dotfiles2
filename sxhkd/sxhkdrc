@@ -1,92 +1,38 @@
-##---------- Keybindings for bspwm ----------##
+### ----- Bspwm
 
-# Terminal (termite)
-super + Return
-	kitty
-
-##---------- Dunst -----------##
-ctrl + space
-	dunstctl close
-
-ctrl + alt + space
-	dunstctl close-all
-
-ctrl + shift + space
-	dunstctl history-pop
-
-##---------- Rofi Launcher & Menus ----------##
-
-# Rofi App Launcher
-super + d
-	dmenu_run
-
-##---------- System ----------##
-
-# Take a screenshot
-super + Print
-	spectacle -bc
-
-super + alt + s
-	spectacle -bcr
-
-# Brighness control
-#XF86MonBrightness{Up,Down}
-#	backlight{-up,-down}
-	
-# Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-        pamixer --sink alsa_output.pci-0000_1e_00.3.analog-stereo {-i,-d} 5
-
-#XF86AudioMute
-#	amixer set Master toggle
-	
-# Music control
-#XF86Audio{Next,Prev,Play}
-#	playerctl {next,previous,play-pause}
-
-##---------- Bspwm ----------##
-
-# Lockscreen
-super + alt + l
-    betterlockscreen --lock blur
-
-# Reload Keybindings
+# Reload keybindings
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Quit/Restart bspwm
+# Quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# Close App
+# Close current program
 super + q
 	bspc node -c
 
-# Kill
-super + alt + Escape
-    bspc quit
-
-# Fullscreen or Monocle
+# Toggle fullscreen/monocle
 super + f
 	bspc desktop -l next
 	
-# Split horizontal, vertical or cancel
-super + {h,v,q}
-	bspc node -p {east,south,cancel}
+# Split horizontal/vertical
+super + {h,v}
+	bspc node -p {east,south}
 
-# Preselect the ratio
+# Preselect the split ratio
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
-# Toggle beetwen floating & tiled
+# Toggle floating/tiled
 super + space
     bspc node -t "~"{floating,tiled}
 
-# Pseudo Tiled & tiled mode
+# Pseudo tiled/tiled mode
 super + {p,t}
     bspc node -t {pseudo_tiled,tiled}
 
-# Set the node flags
+# Set node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
@@ -114,15 +60,56 @@ super + {_,shift + }{1-9}
 super + control + {Left,Right,Up,Down}
 	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
 	
-## Shrinking windows
+# Shrinking windows
 super + alt + {Left,Right,Up,Down}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 	
-## Move floating windows
+# Move floating windows
 alt + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-##---------- Missing Keys -----------##
+
+
+### ----- System
+
+# Brighness control
+#XF86MonBrightness{Up,Down}
+#	backlight{-up,-down}
+	
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+        pamixer --sink alsa_output.pci-0000_1e_00.3.analog-stereo {-i,-d} 5
+
+#XF86AudioMute
+#	amixer set Master toggle
+
+
+
+### ----- Dunst
+
+# Close last notification
+ctrl + space
+	dunstctl close
+
+# Close all notifications
+ctrl + alt + space
+	dunstctl close-all
+
+# Show the last closed notification
+ctrl + shift + space
+	dunstctl history-pop
+
+
+
+### ----- Rofi
+
+# Rofi drun
+super + d
+	rofi -show drun
+
+
+
+### ----- Missing Keys
 
 ctrl + shift + z
 	echo "<" | tr -d '\n' | xclip -selection clipboard
@@ -136,18 +123,38 @@ ctrl + shift + 1
 ctrl + shift + 2
 	echo "~" | tr -d '\n' | xclip -selection clipboard
 
-##---------- Misc -----------##
 
+
+### ----- Misc shortcuts
+
+# Open spotify
 super + s
 	spotify
 
+# Open firefox
 super + shift + f
 	firefox
 
+# Open file manager
 super + e
 	thunar
 
+# Open xcolor
 super + alt + c
 	xcolor | xclip -selection clipboard
 
-##---------- EOF ----------##
+# Open terminal
+super + Return
+	kitty
+
+# Open lockscreen
+super + alt + l
+    betterlockscreen --lock blur
+
+# Take a screenshot
+super + Print
+	spectacle -bc
+
+# Take a screenshot of a region
+super + alt + s
+	spectacle -bcr
