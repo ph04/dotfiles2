@@ -1,54 +1,120 @@
-# Things to fix
+# My current dotfiles
 
-## system
+## To fix
+
+### system
+
+### sddm
+
+- [ ] steal some theme (archcraft?)
+
+### vsc
+
+### thunar
+
+- [ ] add a theme
+
+### bspwm
+
+- [ ] focus on things with the cursor
+
+### kitty
+
+### neovim
+
+- [ ] fix scroll in documentation CoC
+- [ ] go to previous buffer (ctrl + tab)
+- [ ] check other useful things to add
+- [ ] fix nvim tree opening on the right for some stupid reason
+
+### zsh
+
+### polybar
+
+- [ ] fix cursor on desktops
+- [ ] applications in the background
+- [ ] mic volume?
+
+### dunst
+
+- [ ] look
+- [ ] font
+
+### firefox
+
+- [ ] font for "code" text
+- [ ] remove errors from whatsapp (very annoying)
+
+### telegram
+
+- [ ] weird audio bug (change sink device)
+
+### discord
+
+- [ ] weird audio bug (change sink device)
+
+### nitrogen
+
+### betterlockscreen
+
+- [ ] setup correctly on suspension
+
+### rofi
+
+- [ ] menu for shutting down (steal from archcraft possibly)
+- [ ] dmenu theme
+
+### picom
+
+- [ ] set transparency
+  - [ ] kitty (?)
+
+### sxhkd
+
+### sct
+
+## Fixed
+
+### system
 
 - [x] make a swapfile
 - [x] clean fonts
 - [x] emojis
 - [x] enable vsync
 
-## sddm
+### sddm
 
-- [ ] steal some theme (archcraft?)
-
-## vsc
+### vsc
 
 - [x] fix font
 
-## thunar
+### thunar
 
-- [ ] add a theme
-
-## bspwm
+### bspwm
 
 - [x] colors
-- [ ] focus on things with the cursor
 - [x] remove last desktop (facepalm)
 
-## kitty
+### kitty
 
 - [x] theme
 - [x] font
 - [x] gap
 - [x] zsh
 
-## neovim
+### neovim
 
-- [ ] fix scroll in documentation CoC
 - [x] bufferline
 - [x] centered scroll
-- [ ] go to previous buffer (ctrl + tab)
-- [ ] check other useful things to add
-- [ ] fix nvim tree opening on the right for some stupid reason
 - [x] switch buffer on splits with some shortcut
 - [x] number of current line
 
-## zsh
+### zsh
 
 - [x] fish like
 - [x] aliases
 
-## polybar
+### polybar
 
 - [x] make one
 - [x] desktops
@@ -58,56 +124,36 @@
 - [x] ram usage
 - [x] volume
 - [x] time and date
-- [ ] fix cursor on desktops
-- [ ] applications in the background
-- [ ] mic volume?
 
-## dunst
+### dunst
 
-- [ ] look
-- [ ] font
-
-## firefox
+### firefox
 
 - [x] kinetic scroll
-- [ ] font for "code" text
-- [ ] remove errors from whatsapp (very annoying)
 
-## telegram
+### telegram
 
-- [ ] weird audio bug (change sink device)
-
-## discord
+### discord
 
 - [x] font
-- [ ] weird audio bug (change sink device)
 
-## nitrogen
+### nitrogen
 
-- [x] in bspwmrc
-- [x] set picture
+### betterlockscreen
 
-## betterlockscreen
+### rofi
 
-- [ ] setup correctly on suspension
-
-## rofi
-
-- [ ] menu for shutting down (steal from archcraft possibly)
-- [ ] dmenu theme
-
-## picom
+### picom
 
 - [x] in bspwmrc
-- [ ] set transparency
-  - [ ] kitty (?)
 
-## sxhkd
+### sxhkd
 
 - [x] autokey commands (xclip was missing)
 - [x] volume commands
 - [x] remove useless commands (clean the file overall)
 
-## sct
+### sct
 
 - [x] install it and bspwmrc
+
