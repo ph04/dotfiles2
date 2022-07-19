@@ -77,12 +77,12 @@
 
 ## telegram
 
-- [ ] weird audio bug
+- [ ] weird audio bug (change sink device)
 
 ## discord
 
 - [x] font
-- [ ] weird audio bug
+- [ ] weird audio bug (change sink device)
 
 ## nitrogen
 
@@ -106,8 +106,8 @@
 ## sxhkd
 
 - [x] autokey commands (xclip was missing)
-- [ ] volume commands
-- [ ] remove useless commands
+- [x] volume commands
+- [ ] remove useless commands (clean the file overall)
 
 ## sct
 
