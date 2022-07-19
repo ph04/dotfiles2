@@ -24,8 +24,13 @@
 
 - [ ] fix scroll in documentation CoC
 - [ ] go to previous buffer (ctrl + tab)
-- [ ] check other useful things to add
-- [ ] fix nvim tree opening on the right for some stupid reason
+- [ ] add image support
+- [ ] nvim tree
+  - [ ] fix nvim tree opening on the right for some stupid reason
+  - [ ] close nvim tree when closing current buffer
+  - [ ] nvim tree resets the width when closed and re-opened
+  - [ ] enable global shortcuts (?)
+  - [ ] find files not present on screen
 
 ### zsh
 

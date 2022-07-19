@@ -103,9 +103,13 @@ ctrl + shift + space
 
 ### ----- Rofi
 
+# Rofi run
+super + shift + d
+        rofi -show run
+
 # Rofi drun
 super + d
-	rofi -show drun
+        rofi -show drun
 
 
 
