@@ -10,4 +10,5 @@ return require('packer').startup(function()
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'lewis6991/gitsigns.nvim'
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use 'numToStr/Comment.nvim'
 end)
