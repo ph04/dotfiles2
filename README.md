@@ -22,6 +22,7 @@
 
 ### neovim
 
+- [ ] COPY TO ANOTHER FUCKING REGISTER
 - [ ] check out Comment.nvim
 - [ ] don't use nnoremap probably
 - [ ] fix scroll in documentation CoC
