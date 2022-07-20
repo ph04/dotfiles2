@@ -22,6 +22,8 @@
 
 ### neovim
 
+- [ ] check out Comment.nvim
+- [ ] don't use nnoremap probably
 - [ ] fix scroll in documentation CoC
 - [ ] go to previous buffer (ctrl + tab)
 - [ ] add image support
